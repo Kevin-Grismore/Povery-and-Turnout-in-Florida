@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <origin/>
+                <pubdate>20130905</pubdate>
+                <title>City Locations</title>
+                <geoform>vector digital data</geoform>
+                <pubinfo>
+                    <pubplace/>
+                    <publish>Southwest Florida Water Management District</publish>
+                </pubinfo>
+                <onlink>https://www25.swfwmd.state.fl.us/arcgis12/rest/services/OpenData/Boundaries/MapServer/7</onlink>
+                <onlink>https://www31.swfwmd.state.fl.us/metadata/CITYLOCATIONS.xml</onlink>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>City Locations data. This service is for the Open Data Download application for the Southwest Florida Water Management District.</abstract>
+            <purpose>Data set was created to illustrate the location and name of the cities and towns in the Southwest Florida Water Management District. This service is for the Open Data Download application for the Southwest Florida Water Management District.</purpose>
+            <supplinf>Total acreage comparison of the previous version (2010) vs. this current version (2013): 2010 = 774,082.41 acres 2013 = 784,693.44 acres (Diff= +10,611.03 acres) 2016 = 792,113.46 acres (Diff= +7,420.02 acres)</supplinf>
+        </descript>
+        <timeperd>
+            <timeinfo>
+                <rngdates>
+                    <begdate>20160720</begdate>
+                    <enddate>20160819</enddate>
+                </rngdates>
+            </timeinfo>
+            <current>publication date</current>
+        </timeperd>
+        <status>
+            <progress>Complete</progress>
+            <update>Irregular</update>
+        </status>
+        <spdom>
+            <bounding>
+                <westbc>-83.059095</westbc>
+                <eastbc>-81.335439</eastbc>
+                <northbc>29.594175</northbc>
+                <southbc>26.832892</southbc>
+            </bounding>
+        </spdom>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>Municipalities</themekey>
+                <themekey>Towns</themekey>
+                <themekey>Cities</themekey>
+            </theme>
+            <theme>
+                <themekt>ISO 19115 Topic Categories</themekt>
+                <themekey>society</themekey>
+                <themekey>boundaries</themekey>
+            </theme>
+            <place>
+                <placekt>None</placekt>
+                <placekey>SWFWMD</placekey>
+                <placekey>Southwest Florida Water Management District</placekey>
+            </place>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>This
+REST service is only available from 6 A.M. to 10 P.M. daily. The data are being
+provided on an 'as is' basis. The District specifically disclaims any warranty,
+either expressed or implied, including, but not limited to, the implied
+warranties or merchantability and fitness for a particular use. The entire risk
+as to quality and performance is with the user. In no event will the District
+or its staff be liable for any direct, indirect, incidental, special,
+consequential, or other damages, including loss of profit, arising out of the
+use of these data even if the District has been advised of the possibility of
+such damages. All data are intended for resource management use and have not
+been collected or certified by a Florida-registered Surveyor and Mapper.</useconst>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>Southwest Florida Water Management District</cntorg>
+                    <cntper>Mapping and GIS Section</cntper>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>2379 Broad Street (U.S. 41 South)</address>
+                    <city>Brooksville</city>
+                    <state>FL</state>
+                    <postal>34604-6899</postal>
+                </cntaddr>
+                <cntvoice>(352) 796-7211 x4412</cntvoice>
+                <cntfax>(352) 540-6018</cntfax>
+                <hours>8:00 a.m. to 5:00 p.m.</hours>
+            </cntinfo>
+        </ptcontac>
+        <datacred>Southwest Florida Water Management District</datacred>
+        <native>ArcGIS 10.2.2</native>
+    </idinfo>
+    <dataqual>
+        <attracc>
+            <attraccr>CITYNAMEs were verified against source material and current district city layer. A summary table was created using ArcGIS functionality to check for duplications. COUNTY field was verified using a select-by-location functionality and visually inspected.</attraccr>
+        </attracc>
+        <logic>The final product was checked against the source material. The individual county municipalities were clipped to the district's county feature class to ensure no overlaps were present. The final feature class was added to a file geodatabase. The Planning department of the Southwest Florida Water Management District corrected any errors found.</logic>
+        <complete>There are no significant omissions.</complete>
+        <posacc>
+            <horizpa>
+                <horizpar>A File Geodatabase was created. Visual inspection was completed at a scale of 1:8,000 or larger to verify the positional placement of the boundaries. The final layer was clipped to the detailed district county polygon feature class. Dates range between October and November 2010. The goal of this project was to update the previous city boundary layer created in 2008. Data is estimated to be compliant with the National Map Accuracy Standards for 1:12,000, estimated +/- 33.3 feet.</horizpar>
+            </horizpa>
+        </posacc>
+        <lineage>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <title>Municipal_Boundaries.zip</title>
+                    </citeinfo>
+                </srccite>
+                <typesrc>onLine</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20160819</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>Municipal_Boundaries.zip</srccitea>
+                <srccontr>Marion County</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <pubdate>20130805</pubdate>
+                        <title>MUNIS.shp</title>
+                    </citeinfo>
+                </srccite>
+                <typesrc>None</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20130805</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>MUNIS.shp</srccitea>
+                <srccontr>Pinellas County</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <title>Sumter_Cities.zip</title>
+                    </citeinfo>
+                </srccite>
+                <typesrc>None</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20160819</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>Sumter_Cities.zip</srccitea>
+                <srccontr>Sumter County</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <title>city.zip</title>
+                    </citeinfo>
+                </srccite>
+                <typesrc>onLine</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20160819</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>city.zip</srccitea>
+                <srccontr>Polk County</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <title>Manatee_Cities.zip</title>
+                    </citeinfo>
+                </srccite>
+                <typesrc>onLine</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20160819</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>Manatee_Cities.zip</srccitea>
+                <srccontr>Manatee County</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <title>Hernando_Cities.shp, Hernando_Parcels.shp</title>
+                    </citeinfo>
+                </srccite>
+                <typesrc>None</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20160819</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>Hernando_Cities.shp, Hernando_Parcels.shp</srccitea>
+                <srccontr>Hernando County</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <title>Arcadia_City_Limits_Outline.shp</title>
+                    </citeinfo>
+                </srccite>
+                <typesrc>None</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20160819</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>Arcadia_City_Limits_Outline.shp</srccitea>
+                <srccontr>DeSoto County</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <pubdate>20130805</pubdate>
+                        <title>city_limits.shp</title>
+                    </citeinfo>
+                </srccite>
+                <typesrc>None</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20130805</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>city_limits.shp</srccitea>
+                <srccontr>Levy County</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <title>City_Limits_Pasco.zip</title>
+                    </citeinfo>
+                </srccite>
+                <typesrc>onLine</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20160819</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>City_Limits_Pasco.zip</srccitea>
+                <srccontr>Pasco County</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <title>Cities.shp</title>
+                    </citeinfo>
+                </srccite>
+                <typesrc>onLine</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20160819</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>Cities.shp</srccitea>
+                <srccontr>Hillsborough County</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <title>SARASOTACOUNTYBOUNDARY.zip</title>
+                    </citeinfo>
+                </srccite>
+                <typesrc>onLine</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20160819</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>SARASOTACOUNTYBOUNDARY.zip</srccitea>
+                <srccontr>Sarasota County</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <title>HighlandsCountyMunic.zip</title>
+                    </citeinfo>
+                </srccite>
+                <typesrc>None</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20160819</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>HighlandsCountyMunic.zip</srccitea>
+                <srccontr>Highlands County</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <title>city.shp</title>
+                    </citeinfo>
+                </srccite>
+                <typesrc>None</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20160819</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>city.shp</srccitea>
+                <srccontr>Hardee County</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <title>city_of_punta_gorda_bndry.shp</title>
+                    </citeinfo>
+                </srccite>
+                <typesrc>onLine</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20160819</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>city_of_punta_gorda_bndry.shp</srccitea>
+                <srccontr>Charlotte County</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <title>CORPORATE.shp</title>
+                    </citeinfo>
+                </srccite>
+                <typesrc>onLine</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20160819</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>CORPORATE.shp</srccitea>
+                <srccontr>Citrus County</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <title>CityLimits.zip</title>
+                    </citeinfo>
+                </srccite>
+                <typesrc>onLine</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20160819</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>CityLimits.zip</srccitea>
+                <srccontr>Lake County</srccontr>
+            </srcinfo>
+            <procstep>
+                <procdesc>CHARLOTTE: Shapefile was obtained and reprojected to SWFWMD coordinate system, was clipped to the district's county boundaries, and was dissolved into a single multi-part polygon. The final layer was added to the file geodatabase.</procdesc>
+                <procdate>20160819</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Southwest Florida Water Management District</cntorg>
+                            <cntper>Mapping and GIS Section</cntper>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2379 Broad Street (U.S. 41 South)</address>
+                            <city>Brooksville</city>
+                            <state>FL</state>
+                            <postal>34604-6899</postal>
+                        </cntaddr>
+                        <cntvoice>(352) 796-7211</cntvoice>
+                        <cntfax>(352) 540-6018</cntfax>
+                        <hours>8:00 a.m. to 5:00 p.m.</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>HARDEE: Shapefile was obtained and reprojected to SWFWMD coordinate system, was clipped to the district's county boundaries, and was dissolved into a single multi-part polygon. The final layer was added to the file geodatabase.</procdesc>
+                <procdate>20160819</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Southwest Florida Water Management District</cntorg>
+                            <cntper>Mapping and GIS Section</cntper>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2379 Broad Street (U.S. 41 South)</address>
+                            <city>Brooksville</city>
+                            <state>Florida</state>
+                            <postal>34604-6899</postal>
+                        </cntaddr>
+                        <cntvoice>(352) 796-7211</cntvoice>
+                        <cntfax>(352) 540-6018</cntfax>
+                        <hours>8:00 a.m. to 5:00 p.m.</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>LAKE: Shapefile was obtained and reprojected to SWFWMD coordinate system, was clipped to the district's county boundaries, and was dissolved into a single multi-part polygon. The final layer was added to the file geodatabase.</procdesc>
+                <procdate>20160819</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Southwest Florida Water Management District</cntorg>
+                            <cntper>Mapping and GIS Section</cntper>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2379 Broad Street (U.S. 41 South)</address>
+                            <city>Brooksville</city>
+                            <state>Florida</state>
+                            <postal>34604-6899</postal>
+                        </cntaddr>
+                        <cntvoice>(352) 796-7211</cntvoice>
+                        <cntfax>(352) 540-6018</cntfax>
+                        <hours>8:00 a.m. to 5:00 p.m.</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>SUMTER: Shapefile was obtained and reprojected to SWFWMD coordinate system, was clipped to the district's county boundaries, and was dissolved into a single multi-part polygon. The final layer was added to the file geodatabase.</procdesc>
+                <procdate>20160819</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Southwest Florida Water Management District</cntorg>
+                            <cntper>Mapping and GIS Section</cntper>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2379 Broad Street (U.S. 41 South)</address>
+                            <city>Brooksville</city>
+                            <state>Florida</state>
+                            <postal>34604-6899</postal>
+                        </cntaddr>
+                        <cntvoice>(352) 796-7211</cntvoice>
+                        <cntfax>(352) 540-6018</cntfax>
+                        <hours>8:00 a.m. to 5:00 p.m.</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>DESOTO: Shapefile was obtained and reprojected to SWFWMD coordinate system, was clipped to the district's county boundaries, and was dissolved into a single multi-part polygon. The final layer was added to the file geodatabase.</procdesc>
+                <procdate>20160819</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Southwest Florida Water Management District</cntorg>
+                            <cntper>Mapping and GIS Section</cntper>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2379 Broad Street (U.S. 41 South)</address>
+                            <city>Brooksville</city>
+                            <state>Florida</state>
+                            <postal>34604-6899</postal>
+                        </cntaddr>
+                        <cntvoice>(352) 796-7211</cntvoice>
+                        <cntfax>(352) 540-6018</cntfax>
+                        <hours>8:00 a.m. to 5:00 p.m.</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>CITRUS: Shapefile was obtained and reprojected to SWFWMD coordinate system, was clipped to the district's county boundaries, and was dissolved into a single multi-part polygon. The final layer was added to the file geodatabase.</procdesc>
+                <procdate>20160819</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Southwest Florida Water Management District</cntorg>
+                            <cntper>Mapping and GIS Section</cntper>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2379 Broad Street (U.S. 41 South)</address>
+                            <city>Brooksville</city>
+                            <state>Florida</state>
+                            <postal>34604-6899</postal>
+                        </cntaddr>
+                        <cntvoice>(352) 796-7211</cntvoice>
+                        <cntfax>(352) 540-6018</cntfax>
+                        <hours>8:00 a.m. to 5:00 p.m.</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>MARION: Shapefile was obtained and reprojected to SWFWMD coordinate system, was clipped to the district's county boundaries, and was dissolved into a single multi-part polygon. The final layer was added to the file geodatabase.</procdesc>
+                <procdate>20160819</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Southwest Florida Water Management District</cntorg>
+                            <cntper>Mapping and GIS Section</cntper>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2379 Broad Street (U.S. 41 South)</address>
+                            <city>Brooksville</city>
+                            <state>Florida</state>
+                            <postal>34604-6899</postal>
+                        </cntaddr>
+                        <cntvoice>(352) 796-7211</cntvoice>
+                        <cntfax>(352) 540-6018</cntfax>
+                        <hours>8:00 a.m. to 5:00 p.m.</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>MANATEE: Shapefile was obtained and reprojected to SWFWMD coordinate system, was clipped to the district's county boundaries, and was dissolved into a single multi-part polygon. The final layer was added to the file geodatabase.</procdesc>
+                <procdate>20160819</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Southwest Florida Water Management District</cntorg>
+                            <cntper>Mapping and GIS Section</cntper>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2379 Broad Street (U.S. 41 South)</address>
+                            <city>Brooksville</city>
+                            <state>Florida</state>
+                            <postal>34604-6899</postal>
+                        </cntaddr>
+                        <cntvoice>(352) 796-7211</cntvoice>
+                        <cntfax>(352) 540-6018</cntfax>
+                        <hours>8:00 a.m. to 5:00 p.m.</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>PASCO: Shapefile was obtained and reprojected to SWFWMD coordinate system, was clipped to the district's county boundaries, and was dissolved into a single multi-part polygon. The final layer was added to the file geodatabase.</procdesc>
+                <procdate>20160819</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Southwest Florida Water Management District</cntorg>
+                            <cntper>Mapping and GIS Section</cntper>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2379 Broad Street (U.S. 41 South)</address>
+                            <city>Brooksville</city>
+                            <state>Florida</state>
+                            <postal>34604-6899</postal>
+                        </cntaddr>
+                        <cntvoice>(352) 796-7211</cntvoice>
+                        <cntfax>(352) 540-6018</cntfax>
+                        <hours>8:00 a.m. to 5:00 p.m.</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>HILLSBOROUGH: Shapefile was obtained and reprojected to SWFWMD coordinate system, was clipped to the district's county boundaries, and was dissolved into a single multi-part polygon. The final layer was added to the file geodatabase.</procdesc>
+                <procdate>20160819</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Southwest Florida Water Management District</cntorg>
+                            <cntper>Mapping and GIS Section</cntper>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2379 Broad Street (U.S. 41 South)</address>
+                            <city>Brooksville</city>
+                            <state>Florida</state>
+                            <postal>34604-6899</postal>
+                        </cntaddr>
+                        <cntvoice>(352) 796-7211</cntvoice>
+                        <cntfax>(352) 540-6018</cntfax>
+                        <hours>8:00 a.m. to 5:00 p.m.</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>POLK: Shapefile was obtained and reprojected to SWFWMD coordinate system, was clipped to the district's county boundaries, and was dissolved into a single multi-part polygon. The final layer was added to the file geodatabase.</procdesc>
+                <procdate>20160819</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Southwest Florida Water Management District</cntorg>
+                            <cntper>Mapping and GIS Section</cntper>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2379 Broad Street (U.S. 41 South)</address>
+                            <city>Brooksville</city>
+                            <state>Florida</state>
+                            <postal>34604-6899</postal>
+                        </cntaddr>
+                        <cntvoice>(352) 796-7211</cntvoice>
+                        <cntfax>(352) 540-6018</cntfax>
+                        <hours>8:00 a.m. to 5:00 p.m.</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>PINELLAS: Shapefile was obtained and reprojected to SWFWMD coordinate system, was clipped to the district's county boundaries, and was dissolved into a single multi-part polygon. The final layer was added to the file geodatabase.</procdesc>
+                <procdate>20160819</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Southwest Florida Water Management District</cntorg>
+                            <cntper>Mapping and GIS Section</cntper>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2379 Broad Street (U.S. 41 South)</address>
+                            <city>Brooksville</city>
+                            <state>Florida</state>
+                            <postal>34604-6899</postal>
+                        </cntaddr>
+                        <cntvoice>(352) 796-7211</cntvoice>
+                        <cntfax>(352) 540-6018</cntfax>
+                        <hours>8:00 a.m. to 5:00 p.m.</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>HIGHLANDS:Shapefile was obtained and reprojected to SWFWMD coordinate system, was clipped to the district's county boundaries, and was dissolved into a single multi-part polygon. The final layer was added to the file geodatabase.</procdesc>
+                <procdate>20160819</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Southwest Florida Water Management District</cntorg>
+                            <cntper>Mapping and GIS Section</cntper>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2379 Broad Street (U.S. 41 South)</address>
+                            <city>Brooksville</city>
+                            <state>Florida</state>
+                            <postal>34604-6899</postal>
+                        </cntaddr>
+                        <cntvoice>(352) 796-7211</cntvoice>
+                        <cntfax>(352) 540-6018</cntfax>
+                        <hours>8:00 a.m. to 5:00 p.m.</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>LEVY: Shapefile was obtained and reprojected to SWFWMD coordinate system, was clipped to the district's county boundaries, and was dissolved into a single multi-part polygon. The final layer was added to the file geodatabase.</procdesc>
+                <procdate>20160819</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Southwest Florida Water Management District</cntorg>
+                            <cntper>Mapping and GIS Section</cntper>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2379 Broad Street (U.S. 41 South)</address>
+                            <city>Brooksville</city>
+                            <state>Florida</state>
+                            <postal>34604-6899</postal>
+                        </cntaddr>
+                        <cntvoice>(352) 796-7211</cntvoice>
+                        <cntfax>(352) 540-6018</cntfax>
+                        <hours>8:00 a.m. to 5:00 p.m.</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>HERNANDO: Shapefile was obtained and reprojected to SWFWMD coordinate system, was clipped to the district's county boundaries, and was dissolved into a single multi-part polygon. The final layer was added to the file geodatabase.</procdesc>
+                <procdate>20160819</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Southwest Florida Water Management District</cntorg>
+                            <cntper>Mapping and GIS Section</cntper>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2379 Broad Street (U.S. 41 South)</address>
+                            <city>Brooksville</city>
+                            <state>Florida</state>
+                            <postal>34604-6899</postal>
+                        </cntaddr>
+                        <cntvoice>(352) 796-7211</cntvoice>
+                        <cntfax>(352) 540-6018</cntfax>
+                        <hours>8:00 a.m. to 5:00 p.m.</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>SARASOTA: Shapefile was obtained and reprojected to SWFWMD coordinate system, was clipped to the district's county boundaries, and was dissolved into a single multi-part polygon. The final layer was added to the file geodatabase.</procdesc>
+                <procdate>20160819</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Southwest Florida Water Management District</cntorg>
+                            <cntper>Mapping and GIS Section</cntper>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2379 Broad Street (U.S. 41 South)</address>
+                            <city>Brooksville</city>
+                            <state>Florida</state>
+                            <postal>34604-6899</postal>
+                        </cntaddr>
+                        <cntvoice>(352) 796-7211</cntvoice>
+                        <cntfax>(352) 540-6018</cntfax>
+                        <hours>8:00 a.m. to 5:00 p.m.</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+        </lineage>
+    </dataqual>
+    <spdoinfo>
+        <direct>Vector</direct>
+        <ptvctinf>
+            <sdtsterm>
+                <ptvctcnt>104</ptvctcnt>
+            </sdtsterm>
+        </ptvctinf>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>SDECREATOR.CITIES</enttypl>
+                <enttypd>Layer contains the incorporated municipalities within the 16 counties of the Southwest Florida Water Management District (SWFWMD).</enttypd>
+                <enttypds>SWFWMD</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>ACRES</attrlabl>
+                <attrdef>Total acreage for each municipality.</attrdef>
+                <attrdefs>User</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <udom>number</udom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SHAPE.LEN</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SHAPE.AREA</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>LAST_UPDATE_DT</attrlabl>
+                <attrdef>Last date the feature was updated within the layer.</attrdef>
+                <attrdefs>User</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <udom>date</udom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>HECTARES</attrlabl>
+                <attrdef>Total municipality area in hectares.</attrdef>
+                <attrdefs>User</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <udom>number</udom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>CITY_NAME</attrlabl>
+                <attrdef>Name given to each municipality.</attrdef>
+                <attrdefs>User</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <udom>text</udom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>COUNTY_NAME</attrlabl>
+                <attrdef>County where each municipality falls within.</attrdef>
+                <attrdefs>User</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <udom>text</udom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SHAPE</attrlabl>
+                <attrdef>Feature geometry.</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <udom>Coordinates defining the features.</udom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+        </detailed>
+    </eainfo>
+    <distinfo>
+        <distrib>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>Southwest Florida Water Management District</cntorg>
+                    <cntper>Mapping and GIS Section</cntper>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>2379 Broad Street (U.S. 41 South)</address>
+                    <city>Brooksville</city>
+                    <state>FL</state>
+                    <postal>34604-6899</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>(352) 796-7211</cntvoice>
+                <cntfax>(352) 540-6018</cntfax>
+                <hours>8:00 a.m. to 5:00 p.m.</hours>
+            </cntinfo>
+        </distrib>
+        <resdesc>The data are being provided on an 'as is' basis. The District specifically disclaims any warranty, expressed or implied, including, but not limited to, the implied warranties or merchantability and fitness for a particular use. The entire risk as to quality and performance is with the user. In no event will the District or its staff be liable for any direct, indirect, incidental, special, consequential, or other damages, including loss of profit, arising out of the use of these data even if the District has been advised of the possibility of such damages. All data are intended for resource management use.</resdesc>
+        <distliab>See access and use constraints information.</distliab>
+    </distinfo>
+    <metainfo>
+        <metd>20160816</metd>
+        <metc>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>Southwest Florida Water Management District</cntorg>
+                    <cntper>Mapping &amp; GIS Section</cntper>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>2379 Broad Street (U.S. 41 South)</address>
+                    <city>Brooksville</city>
+                    <state>FL</state>
+                    <postal>34604-6899</postal>
+                </cntaddr>
+                <cntvoice>(352) 796-7211</cntvoice>
+                <cntfax>(352) 540-6018</cntfax>
+                <hours>8:00 a.m. to 5:00 p.m.</hours>
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
